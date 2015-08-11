@@ -47,7 +47,7 @@
 						if(input.attr('type') == 'radio' || input.attr('type') == 'checkbox') {
 							if(value==input.attr('data-storage')) {
 								$('#'+inputid).attr('checked', input.is(':checked')).attr('class',  'radio-checked');
-								$('#'+inputid).attr('checked', true);
+								//$('#'+inputid).attr('checked', true);
 								console.log('check #' + inputid);
 							} else {
 								input.removeAttr('checked');
