@@ -1,0 +1,216 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>GOV.UK</title>
+	<meta name="author" content="Tom Harrop" />
+	<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
+	<!--[if gt IE 8]><!--><link href="govuk-assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+	<!--[if IE 6]><link href="govuk-assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 7]><link href="govuk-assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]><link href="govuk-assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<link href="govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+	<link href="govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/form.storage.js"></script>
+	<script type="text/javascript" src="scripts/application.js"></script>
+	<script type="text/javascript" src="scripts/details.polyfill.js"></script>
+
+	<link  media="all" rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+	<link  media="all" rel="stylesheet" type="text/css" href="stylesheets/ipt.css" />
+
+</head>
+<body>
+
+	<header data-includefile="header"></header>
+	<main id="content" role="main">
+		<div data-includefile="banner-alpha"></div>
+
+
+
+		<nav role="navigation" class="progress-indicator reveal">
+		    <ol>
+		            <li class="current">
+		                <a data-nav-position="1 of 7: ">
+		                    Start
+		                    <span class="visuallyhidden"> - current step</span>
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="2 of 7: ">
+		                    Application
+
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="3 of 7: ">
+		                    Finance
+
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="4 of 7: ">
+		                    Documents
+
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="5 of 7: ">
+		                    Declaration
+
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="6 of 7: ">
+		                    Pay
+
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="7 of 7: ">
+		                    Download and print
+
+		                </a>
+		            </li>
+		        <li class="show-all"><a style="visibility: visible;">Show all steps</a></li>
+		    </ol>
+		</nav>
+
+
+
+
+
+		<section aria-labelledby="editInformation" class="content-max-width">
+
+
+
+<header>
+    <h1 id="editInformation">Your application route</h1>
+
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="js-block">
+
+
+
+<form action="/save/start.leaveToRemainDuration" method="POST">
+
+            <input type="hidden" name="csrfToken" value="325573aff0bf579adc0e84494273c4834869b1d8-1439288515195-455b1323a6073d223b1e43b5">
+
+
+
+
+
+
+
+<div id="leaveToRemainDuration">
+    <div>
+    <fieldset class="">
+            <legend>
+    <span>
+        Which type of permission to stay in the UK are you applying for?
+        <span class="visuallyhidden">(Required)</span>
+    </span>
+</legend>
+
+            <div class="hint" id="leaveToRemainDuration_durationRef_described">
+    <span class="block">If you are extending your leave to remain in the UK, you can find your current type in the letter sent to you when you were granted your initial permission to stay as a partner.</span>
+
+
+</div>
+
+
+        <div class="group selectable selectable-list" id="durationRef_field">
+            <div class="field-input">
+            <label for="durationRef_extensionFiveYears">
+        <input type="radio" id="durationRef_extensionFiveYears" name="durationRef" value="extensionFiveYears" aria-describedby="leaveToRemainDuration_durationRef_described">
+        <span class="block">Extension on a 5-year route</span>
+
+</label>
+
+
+
+
+            </div>
+            <div class="field-input">
+            <label for="durationRef_extensionTenYears">
+        <input type="radio" id="durationRef_extensionTenYears" name="durationRef" value="extensionTenYears" aria-describedby="leaveToRemainDuration_durationRef_described">
+        <span class="block">Extension on a 10-year route</span>
+
+</label>
+
+
+
+
+            </div>
+            <div class="field-input">
+            <label for="durationRef_settlement">
+        <input type="radio" id="durationRef_settlement" name="durationRef" value="settlement" aria-describedby="leaveToRemainDuration_durationRef_described">
+        <span class="block">Permanent settlement in the UK</span>
+
+</label>
+
+
+        <div class="indented-content help-notice optional-section-durationRef" data-toggle-value="settlement" data-toggled-by="durationRef_settlement" aria-hidden="true" hidden="hidden" >
+            <div class="">
+                <span class="block"><p>You can not currently apply for settlement online. You must complete a paper form to apply for settlement in the UK.</p><p>Read how to apply in the <a href="https://www.gov.uk/settle-in-the-uk">guidance on GOV.UK</a>.</p></span>
+
+            </div>
+        </div>
+
+
+
+            </div>
+
+
+</div>
+    </fieldset>
+</div>
+
+</div>
+
+
+            <a id="submit" class="button button-continue" href="legal.html">Save and continue</a>
+
+
+
+
+
+
+</form>
+
+
+    </div>
+
+
+
+        </section>
+
+
+
+
+
+
+	</main>
+	<footer data-includefile="footer"></footer>
+</body>
+</html>

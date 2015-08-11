@@ -1,0 +1,543 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>GOV.UK</title>
+	<meta name="author" content="Tom Harrop" />
+	<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
+	<!--[if gt IE 8]><!--><link href="govuk-assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+	<!--[if IE 6]><link href="govuk-assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 7]><link href="govuk-assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]><link href="govuk-assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<link href="govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+	<link href="govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/form.storage.js"></script>
+	<script type="text/javascript" src="scripts/application.js"></script>
+	<script type="text/javascript" src="scripts/details.polyfill.js"></script>
+
+	<link  media="all" rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+	<link  media="all" rel="stylesheet" type="text/css" href="stylesheets/ipt.css" />
+
+</head>
+<body>
+
+	<header data-includefile="header"></header>
+	<main id="content" role="main">
+		<div data-includefile="banner-alpha"></div>
+
+
+
+		<nav role="navigation" class="progress-indicator reveal">
+		    <ol>
+		            <li class="current">
+		                <a data-nav-position="1 of 7: ">
+		                    Start
+		                    <span class="visuallyhidden"> - current step</span>
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="2 of 7: ">
+		                    Application
+
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="3 of 7: ">
+		                    Finance
+
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="4 of 7: ">
+		                    Documents
+
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="5 of 7: ">
+		                    Declaration
+
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="6 of 7: ">
+		                    Pay
+
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="7 of 7: ">
+		                    Download and print
+
+		                </a>
+		            </li>
+		        <li class="show-all"><a style="visibility: visible;">Show all steps</a></li>
+		    </ol>
+		</nav>
+
+
+
+
+
+		<section aria-label="completedSummary">
+
+
+
+    <section aria-labelledby="editInformation" class="content-max-width">
+
+
+
+<header>
+    <h1 id="editInformation">Your details</h1>
+
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="js-block">
+
+
+
+<form action="/save/start.mainApplicantName" method="POST" name="you">
+
+            <input type="hidden" name="csrfToken" value="d2869bb7362ac369346873bdee21620f9f2f90e8-1439290929850-455b1323a6073d223b1e43b5">
+
+
+
+
+<fieldset id="mainApplicantName">
+
+    <div class="group" id="titleRef_field">
+            <div class="field-input">
+                <label for="titleRef" class="">
+        <span>Title</span>
+
+</label>
+    <select id="titleRef" name="titleRef" aria-required="true" data-visual-length="10">
+                <option value=""></option>
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Miss">Miss</option>
+                <option value="Ms">Ms</option>
+                <option value="Dr">Doctor</option>
+                <option value="Rev">Reverend</option>
+    </select>
+
+            </div>
+
+
+</div>
+
+    <div class="group" id="givenName_field">
+            <div class="field-input">
+                <label for="givenName" class="">
+        <span>Given names</span>
+
+</label>
+    <input type="text" id="givenName" name="givenName" maxlength="255" data-visual-length="255" aria-required="true">
+
+
+            </div>
+
+
+</div>
+
+    <div class="group" id="familyName_field">
+            <div class="field-input">
+                <label for="familyName" class="">
+        <span>Family name</span>
+
+</label>
+    <input type="text" id="familyName" name="familyName" maxlength="255" data-visual-length="255" aria-required="true">
+
+
+            </div>
+
+
+</div>
+
+    <input type="hidden" name="personRef" value="177523ac-fdbd-4a10-9116-53221e86c681">
+
+    <details>
+        <summary aria-controls="dc_1" tabindex="0" role="button" aria-expanded="false"><span>I am not sure how to enter my name</span>
+</summary>
+        <div class="inner" id="dc_1">
+            <span class="block"><p>Enter your name as shown on your passport.</p><ul><li>if you have middle names, include these with your given name</li><li>if your name has a suffix (eg <em>Jr.</em>), include this with your given name</li></ul></span>
+
+            <details>
+            <summary aria-controls="dc_2" tabindex="0" role="button" aria-expanded="false"><span>You do not have a given and family name – your name is one word</span>
+</summary>
+            <div class="inner" id="dc_2">
+                <div class="group" id="singleName_field">
+            <div class="field-input">
+                <label for="singleName" class="">
+        <span>Name</span>
+
+</label>
+    <input type="text" id="singleName" name="singleName" maxlength="255" data-visual-length="255" aria-required="true">
+
+
+            </div>
+
+
+</div>
+            </div>
+            </details>
+        </div>
+    </details>
+
+</fieldset>
+
+
+
+
+
+
+
+
+
+<fieldset class=" inline">
+<legend>
+	<span>
+		What is your date of birth?
+		<span class="visuallyhidden">(Required)</span>
+	</span>
+</legend>
+<div class="hint" id="mainApplicantBirthDetails_dateOfBirth_described">
+	<span class="block">For example, 20 3 1976</span>
+</div>
+
+<div class="group" id="dateOfBirth_day_field">
+<div class="field-input">
+		<label for="dateOfBirth_day" class="">
+<span>Day</span>
+
+</label>
+<input type="number" id="dateOfBirth_day" name="dateOfBirth.day" data-visual-length="3" min="1" max="31" step="any" pattern="[0-9]*">
+
+
+</div>
+
+
+</div>
+<div class="group" id="dateOfBirth_month_field">
+<div class="field-input">
+		<label for="dateOfBirth_month" class="">
+<span>Month</span>
+
+</label>
+<input type="number" id="dateOfBirth_month" name="dateOfBirth.month" data-visual-length="3" min="1" max="12" step="any" pattern="[0-9]*">
+
+
+</div>
+
+
+</div>
+<div class="group" id="dateOfBirth_year_field">
+<div class="field-input">
+		<label for="dateOfBirth_year" class="">
+<span>Year</span>
+
+</label>
+<input type="text" id="dateOfBirth_year" name="dateOfBirth.year" maxlength="255" data-visual-length="6" aria-required="true">
+
+
+</div>
+
+
+</div>
+
+</fieldset>
+<fieldset>
+
+<div class="group" id="familyName_field">
+				<div class="field-input">
+						<label for="familyName" class="">
+		<span>Passport Number</span>
+
+</label>
+<input type="text" id="familyName" name="passportnumber" maxlength="255" data-visual-length="255" aria-required="true">
+
+
+				</div>
+
+
+</div>
+
+
+
+
+<fieldset class=" inline">
+<legend>
+	<span>
+		Passport issue date?
+		<span class="visuallyhidden">(Required)</span>
+	</span>
+</legend>
+<div class="hint" id="mainApplicantBirthDetails_dateOfBirth_described">
+	<span class="block">For example, 20 3 1976</span>
+</div>
+
+
+<div class="group" id="dateOfBirth_day_field">
+<div class="field-input">
+		<label for="dateOfBirth_day" class="">
+<span>Day</span>
+
+</label>
+<input type="number" id="dateOfBirth_day" name="dateOfBirth.day" data-visual-length="3" min="1" max="31" step="any" pattern="[0-9]*">
+
+
+</div>
+
+
+</div>
+<div class="group" id="dateOfBirth_month_field">
+<div class="field-input">
+		<label for="dateOfBirth_month" class="">
+<span>Month</span>
+
+</label>
+<input type="number" id="dateOfBirth_month" name="dateOfBirth.month" data-visual-length="3" min="1" max="12" step="any" pattern="[0-9]*">
+
+
+</div>
+
+
+</div>
+<div class="group" id="dateOfBirth_year_field">
+<div class="field-input">
+		<label for="dateOfBirth_year" class="">
+<span>Year</span>
+
+</label>
+<input type="text" id="dateOfBirth_year" name="dateOfBirth.year" maxlength="255" data-visual-length="6" aria-required="true">
+
+
+</div>
+
+
+</div>
+
+
+<fieldset class=" inline">
+<legend>
+	<span>
+		Passport expiry date?
+		<span class="visuallyhidden">(Required)</span>
+	</span>
+</legend>
+<div class="hint" id="mainApplicantBirthDetails_dateOfBirth_described">
+	<span class="block">For example, 20 3 1976</span>
+</div>
+
+
+
+				<div class="group" id="dateOfBirth_day_field">
+				<div class="field-input">
+						<label for="dateOfBirth_day" class="">
+		<span>Day</span>
+
+</label>
+<input type="number" id="dateOfBirth_day" name="dateOfBirth.day" data-visual-length="3" min="1" max="31" step="any" pattern="[0-9]*">
+
+
+				</div>
+
+
+</div>
+				<div class="group" id="dateOfBirth_month_field">
+				<div class="field-input">
+						<label for="dateOfBirth_month" class="">
+		<span>Month</span>
+
+</label>
+<input type="number" id="dateOfBirth_month" name="dateOfBirth.month" data-visual-length="3" min="1" max="12" step="any" pattern="[0-9]*">
+
+
+				</div>
+
+
+</div>
+				<div class="group" id="dateOfBirth_year_field">
+				<div class="field-input">
+						<label for="dateOfBirth_year" class="">
+		<span>Year</span>
+
+</label>
+<input type="text" id="dateOfBirth_year" name="dateOfBirth.year" maxlength="255" data-visual-length="6" aria-required="true">
+
+
+				</div>
+
+
+</div>
+</fieldset>
+
+
+
+
+
+            <a id="submit"  class="button button-continue" href="check.html">Save and continue</a>
+
+
+
+
+
+
+</form>
+
+
+    </div>
+
+
+
+
+<div class="save-for-later-link">
+    <a data-track="save-for-later" href="/saveForLater"><span>Return to this application later</span>
+</a>
+</div>
+
+
+        </section>
+
+
+<div class="answers">
+
+
+<details class="answers">
+    <summary tabindex="0" role="button" id="showYourAnswers" aria-expanded="false" aria-controls="answers_so_far" data-track="show-your-answers"><span>Show your answers</span>
+</summary>
+    <div id="answers_so_far" class="inner">
+    <h2>Personal information</h2>
+<div class="answer">
+    <dl>
+        <dt class="answer-title">
+    Are you currently in the UK?
+
+</dt>
+<dd class="answer-text">
+      Yes
+</dd>
+
+    </dl>
+        <a class="answer-edit" title="Your location" href="/edit/start.applicantLocation">Change</a>
+
+</div>
+<h2>Duty to give all reasons</h2>
+<div class="answer">
+    <dl>
+        <dt class="answer-title">
+    I understand that I must enter complete and accurate information for all questions in my application
+
+</dt>
+<dd class="answer-text">
+      Yes
+</dd>
+
+        <dt class="answer-title">
+    I understand I could lose the right to appeal if I fail to provide any reasons or grounds I later wish to be considered
+
+</dt>
+<dd class="answer-text">
+      Yes
+</dd>
+
+    </dl>
+        <a class="answer-edit" title="Your duty to give all reasons for staying in the UK" href="/edit/start.dutyToStateAllReasons">Change</a>
+
+</div>
+<h2>Personal information</h2>
+<div class="answer">
+    <dl>
+        <dt class="answer-title">
+    Which type of leave to remain (permission to stay in the UK) do you currently hold?
+
+</dt>
+<dd class="answer-text">
+      As a partner
+</dd>
+
+    </dl>
+        <a class="answer-edit" title="Current leave to remain" href="/edit/start.currentLeaveToRemain">Change</a>
+
+</div>
+<div class="answer">
+    <dl>
+        <dt class="answer-title">
+    Which type of permission to stay in the UK are you applying for?
+
+</dt>
+<dd class="answer-text">
+      Extension on a 10-year route
+</dd>
+
+    </dl>
+        <a class="answer-edit" title="Your application route" href="/edit/start.leaveToRemainDuration">Change</a>
+
+</div>
+<h2>Legal representative</h2>
+<div class="answer">
+    <dl>
+        <dt class="answer-title">
+    Do you have a legal representative for this application?
+
+</dt>
+<dd class="answer-text">
+      No
+</dd>
+
+    </dl>
+        <a class="answer-edit" title="Legal representation" href="/edit/start.legalRep">Change</a>
+
+</div>
+<h2>Personal information</h2>
+<div class="answer">
+    <dl>
+        <dt class="answer-title">
+    Email address
+
+</dt>
+<dd class="answer-text">
+      user@website.com
+</dd>
+
+    </dl>
+        <a class="answer-edit" title="Your email and password" href="/edit/start.contactEmail">Change</a>
+
+</div>
+
+    </div>
+</details>
+
+</div>
+
+     </section>
+
+
+
+
+
+
+	</main>
+	<footer data-includefile="footer"></footer>
+</body>
+</html>
