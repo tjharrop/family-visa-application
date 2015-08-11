@@ -17,3 +17,11 @@ pre {
 *[class^='optional-section-'],*[class*=' optional-section-'] {display: none;}
 
 .column-two-thirds {padding:0px;}
+
+.indented-content.help-notice {
+	padding-left: 8.6rem;
+	background-position: 3rem 0.3rem;
+}
+.applicant>div {
+	background-image: url(/images/contact.png) !important;
+}
