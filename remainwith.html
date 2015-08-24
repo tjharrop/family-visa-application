@@ -95,7 +95,7 @@
 
 
 <header>
-    <h1 id="editInformation">Person you are applying to remain in the UK with</h1>
+    <h1 id="editInformation"> </h1>
 
 </header>
 
@@ -364,5 +364,24 @@
 
 	</main>
 	<footer data-includefile="footer"></footer>
+<script type="text/javascript">
+
+	if (localStorage.getItem('applicant') == "applicant_brit") {
+		$("#editInformation").html("Your Details");
+	}
+
+	if (localStorage.getItem('applicant') == "applicant_spouse") {
+		$("#editInformation").html("Your British or settled person's details");
+	}
+
+	if (localStorage.getItem('applicant') == "applicant_rep") {
+		$("#editInformation").html("Name of British or settled person");
+	}
+
+	if (localStorage.getItem('applicant') == "applicant_fof") {
+		$("#editInformation").html("Name of British or settled person");
+	}
+
+</script>
 </body>
 </html>

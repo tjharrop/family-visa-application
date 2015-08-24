@@ -539,5 +539,25 @@
 
 	</main>
 	<footer data-includefile="footer"></footer>
+
+	<script type="text/javascript">
+
+		if (localStorage.getItem('applicant') == "applicant_brit") {
+			$("#editInformation").html("Your spouse's details");
+		}
+
+		if (localStorage.getItem('applicant') == "applicant_spouse") {
+			$("#editInformation").html("Your details");
+		}
+
+		if (localStorage.getItem('applicant') == "applicant_rep") {
+			$("#editInformation").html("Name of person applying to stay in the UK");
+		}
+
+		if (localStorage.getItem('applicant') == "applicant_fof") {
+			$("#editInformation").html("Name of person applying to stay in the UK");
+		}
+
+	</script>
 </body>
 </html>
