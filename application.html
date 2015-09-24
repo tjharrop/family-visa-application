@@ -92,13 +92,19 @@
         <header>
             <h1>
                 <span class="tagline">Partner on the 5 or 10 Year Route</span>
-                <span>The applicant</span>
+								<span class="playback-container" name="remain">
+									<span class="playback-cell" data-playback="givenName" style="display:inline;"></span>
+									<span class="playback-cell" data-playback="familyName" style="display:inline;"></span>
+								</span>
+								<span class="playback-container" name="you">
+									<span class="playback-cell" data-playback="givenName" style="display:inline;"></span>
+									<span class="playback-cell" data-playback="familyName" style="display:inline;"></span>
+								</span>
+								<p>&nbsp;</p>
             </h1>
         </header>
-
-            <div class="u-fail"><strong>Part complete</strong></div>
     </div>
-    <a class="button" role="button" href="/edit/application.0">Answer questions about this person</a>
+    <a class="button" role="button" href="finance.html">Save and continue</a>
 
 
 
@@ -160,5 +166,25 @@
 
 	</main>
 	<footer data-includefile="footer"></footer>
+
+	<script type="text/javascript">
+
+		if (localStorage.getItem('applicant') == "applicant_brit") {
+			$("span[name='you']").hide();
+		}
+
+		if (localStorage.getItem('applicant') == "applicant_spouse") {
+			$("span[name='remain']").hide();
+		}
+
+		if (localStorage.getItem('applicant') == "applicant_rep") {
+			$("span[name='remain']").hide();
+		}
+
+		if (localStorage.getItem('applicant') == "applicant_fof") {
+			$("span[name='remain']").hide();
+		}
+
+	</script>
 </body>
 </html>
