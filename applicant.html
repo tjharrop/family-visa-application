@@ -1,0 +1,209 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>GOV.UK</title>
+	<meta name="author" content="Tom Harrop" />
+	<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
+	<!--[if gt IE 8]><!--><link href="govuk-assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+	<!--[if IE 6]><link href="govuk-assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 7]><link href="govuk-assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]><link href="govuk-assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<link href="govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+	<link href="govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/form.storage.js"></script>
+	<script type="text/javascript" src="scripts/application.js"></script>
+	<script type="text/javascript" src="scripts/details.polyfill.js"></script>
+
+	<link  media="all" rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+	<link  media="all" rel="stylesheet" type="text/css" href="stylesheets/ipt.css" />
+
+</head>
+<body>
+
+	<header data-includefile="header"></header>
+	<main id="content" role="main">
+		<div data-includefile="banner-alpha"></div>
+
+
+
+		<nav role="navigation" class="progress-indicator reveal">
+		    <ol>
+		            <li class="current">
+		                <a data-nav-position="1 of 7: ">
+		                    Start
+		                    <span class="visuallyhidden"> - current step</span>
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="2 of 7: ">
+		                    Application
+
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="3 of 7: ">
+		                    Finance
+
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="4 of 7: ">
+		                    Documents
+
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="5 of 7: ">
+		                    Declaration
+
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="6 of 7: ">
+		                    Pay
+
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="7 of 7: ">
+		                    Download and print
+
+		                </a>
+		            </li>
+		        <li class="show-all"><a style="visibility: visible;">Show all steps</a></li>
+		    </ol>
+		</nav>
+
+
+
+
+
+		<section aria-labelledby="editInformation" class="content-max-width">
+
+
+
+		<header>
+		    <h1 id="editInformation">Person applying</h1>
+
+		</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		    <div class="js-block">
+
+
+
+		<form action="/save/start.applicantLocation" method="POST">
+
+		            <input type="hidden" name="csrfToken" value="8922c59e5aadbe1b50cbc75a8c633cece807f48a-1439285625827-455b1323a6073d223b1e43b5">
+
+
+
+		<div id="applicantLocation">
+
+		    <div>
+		    <fieldset class=" ">
+		            <legend>
+		    <span>
+		        I am a
+		        <span class="visuallyhidden">(Required)</span>
+		    </span>
+		</legend>
+
+				<div class=" selectable selectable-list" id="isUk_field">
+			    <div class="field-input">
+			      <label for="applicant_brit">
+			        <input type="radio" id="applicant_brit" name="applicant" value="true">
+			        <span class="block">British or settled person applying for my spouse</span>
+						</label>
+			    </div>
+			  </div>
+
+						<div class=" selectable selectable-list" id="isUk_field">
+					    <div class="field-input">
+					      <label for="applicant_spouse">
+					        <input type="radio" id="applicant_spouse" name="applicant" value="true">
+					        <span class="block">Spouse of a British or settled person</span>
+								</label>
+					    </div>
+					  </div>
+
+								<div class=" selectable selectable-list" id="isUk_field">
+							    <div class="field-input">
+							      <label for="applicant_rep">
+							        <input type="radio" id="applicant_rep" name="applicant" value="true">
+							        <span class="block">Legal representative</span>
+										</label>
+							    </div>
+							  </div>
+
+										<div class=" selectable selectable-list" id="isUk_field">
+									    <div class="field-input">
+									      <label for="applicant_fof">
+									        <input type="radio" id="applicant_fof" name="applicant" value="true">
+									        <span class="block">Friend or family member helping with this application</span>
+												</label>
+									    </div>
+									  </div>
+
+
+
+
+			  </fieldset>
+		</div>
+
+		</div>
+		<div id="notInUkWarning" class="help-notice optional-section-isUk" data-toggle-value="false" style="display:none;" ><p class="bold-small">You cannot use this service because you are not currently in the UK.</p><p class="bold-small">This service is only for people who are applying from within the UK.</p><p class="bold-small">You must apply for your visa using the <a href="https://www.gov.uk/apply-uk-visa" target="_blank">Visa4UK service</a>.</p></div>
+
+		            <a id="submit" href="location.html" class="button button-continue">Save and continue</a>
+
+
+
+
+
+
+		</form>
+
+
+		    </div>
+
+
+
+		        </section>
+
+
+
+
+
+
+	</main>
+	<footer data-includefile="footer"></footer>
+
+<script type="text/javascript">
+	$("input[name='applicant']").click(function(){
+		var appType = $(this).attr('id');
+		localStorage.setItem('applicant',appType);
+	});
+</script>
+
+</body>
+</html>

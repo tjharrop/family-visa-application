@@ -1,0 +1,182 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>GOV.UK</title>
+	<meta name="author" content="Tom Harrop" />
+	<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
+	<!--[if gt IE 8]><!--><link href="govuk-assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+	<!--[if IE 6]><link href="govuk-assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 7]><link href="govuk-assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]><link href="govuk-assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<link href="govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+	<link href="govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/form.storage.js"></script>
+	<script type="text/javascript" src="scripts/application.js"></script>
+	<script type="text/javascript" src="scripts/details.polyfill.js"></script>
+
+	<link  media="all" rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+	<link  media="all" rel="stylesheet" type="text/css" href="stylesheets/ipt.css" />
+
+</head>
+<body>
+
+	<header data-includefile="header"></header>
+	<main id="content" role="main">
+		<div data-includefile="banner-alpha"></div>
+
+
+
+		<nav role="navigation" class="progress-indicator reveal">
+		    <ol>
+		            <li class="active">
+		                <a data-nav-position="1 of 7: ">
+		                    Start
+		                    <span class="visuallyhidden"> - current step</span>
+		                </a>
+		            </li>
+		            <li class="active">
+		                <a data-nav-position="2 of 7: ">
+		                    Application
+
+		                </a>
+		            </li>
+		            <li class="active">
+		                <a data-nav-position="3 of 7: ">
+		                    Finance
+
+		                </a>
+		            </li>
+		            <li class="active">
+		                <a data-nav-position="4 of 7: ">
+		                    Documents
+
+		                </a>
+		            </li>
+		            <li class="current">
+		                <a data-nav-position="5 of 7: ">
+		                    Declaration
+
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="6 of 7: ">
+		                    Pay
+
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="7 of 7: ">
+		                    Download and print
+
+		                </a>
+		            </li>
+		        <li class="show-all"><a style="visibility: visible;">Show all steps</a></li>
+		    </ol>
+		</nav>
+
+
+
+
+
+		<section aria-labelledby="editInformation" class="content-max-width">
+
+
+
+<header>
+    <h1 id="editInformation">Declaration</h1>
+
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="js-block">
+
+
+
+<form action="/save/start.dutyToStateAllReasons" method="POST">
+
+            <input type="hidden" name="csrfToken" value="0647d98d4289e61eff0d807ef2234519edd49f64-1439286025817-455b1323a6073d223b1e43b5">
+
+
+
+<!-- <span class="block"><p>You must state in this application all your reasons or grounds for wishing to stay in the United Kingdom.</p><p>If your claim is refused, you could lose any right of appeal you may otherwise have qualified for if you do not state in this application any reasons or grounds for remaining in the UK that you later provide without good reason.</p><p>This is a requirement under section 120 of the Nationality, Immigration and Asylum Act 2002.</p></span> -->
+
+
+<div id="$blockName" class="block">
+    <div>
+    <fieldset class="">
+        <div class="group selectable selectable-list" id="agreements_field">
+            <div>You need to accept the following:</div>
+<div class="nested-field-group">
+
+        <div class="field-input">
+            <label for="agreements_understandToGiveInfo">
+        <input type="checkbox" id="agreements_understandToGiveInfo" name="agreements[0]" value="understandToGiveInfo">
+        <span class="block">I declare that, to the best of my knowledge, the information I have submitted in my application is complete and accurate</span>
+
+</label>
+
+
+        </div>
+        <div class="field-input">
+            <label for="agreements_understandToLoseRightToAppeal">
+        <input type="checkbox" id="agreements_understandToLoseRightToAppeal" name="agreements[1]" value="understandToLoseRightToAppeal">
+        <span class="block">I understand that I could lose the right to appeal if I have failed to provide any reasons or grounds I later wish to be considered</span>
+
+</label>
+
+
+        </div>
+</div>
+
+
+</div>
+    </fieldset>
+</div>
+
+</div>
+
+            <a id="submit" href="https://payments:team@payment-prototype.herokuapp.com/route-visa-choose-payment" class="button button-continue">Save and continue</a>
+
+
+
+
+
+
+</form>
+
+
+    </div>
+
+
+
+        </section>
+
+
+
+
+
+
+	</main>
+	<footer data-includefile="footer"></footer>
+</body>
+</html>

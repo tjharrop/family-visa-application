@@ -1,0 +1,200 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>GOV.UK</title>
+	<meta name="author" content="Tom Harrop" />
+	<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
+	<!--[if gt IE 8]><!--><link href="govuk-assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+	<!--[if IE 6]><link href="govuk-assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 7]><link href="govuk-assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]><link href="govuk-assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<link href="govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+	<link href="govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/form.storage.js"></script>
+	<script type="text/javascript" src="scripts/application.js"></script>
+	<script type="text/javascript" src="scripts/details.polyfill.js"></script>
+
+	<link  media="all" rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+	<link  media="all" rel="stylesheet" type="text/css" href="stylesheets/ipt.css" />
+
+</head>
+<body>
+
+	<header data-includefile="header"></header>
+	<main id="content" role="main">
+		<div data-includefile="banner-alpha"></div>
+
+
+
+		<nav role="navigation" class="progress-indicator reveal">
+		    <ol>
+		            <li class="active">
+		                <a data-nav-position="1 of 7: ">
+		                    Start
+		                    <span class="visuallyhidden"> - current step</span>
+		                </a>
+		            </li>
+		            <li class="active">
+		                <a data-nav-position="2 of 7: ">
+		                    Application
+
+		                </a>
+		            </li>
+		            <li class="current">
+		                <a data-nav-position="3 of 7: ">
+		                    Finance
+
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="4 of 7: ">
+		                    Documents
+
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="5 of 7: ">
+		                    Declaration
+
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="6 of 7: ">
+		                    Pay
+
+		                </a>
+		            </li>
+		            <li class="inactive">
+		                <a data-nav-position="7 of 7: ">
+		                    Download and print
+
+		                </a>
+		            </li>
+		        <li class="show-all"><a style="visibility: visible;">Show all steps</a></li>
+		    </ol>
+		</nav>
+
+
+
+
+
+		<section aria-label="completedSummary">
+
+
+
+			<section aria-labelledby="editInformation" class="content-max-width">
+
+
+
+		<header>
+		    <h1 id="editInformation">Your household income</h1>
+
+		</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		    <div class="js-block">
+
+
+
+		<form name="finance">
+
+		            <input type="hidden" name="csrfToken" value="87c307449770d83837658f6c46fada59867d075e-1439292623244-455b1323a6073d223b1e43b5">
+
+
+		<div id="doYouHaveAPreviousPartner">
+
+
+
+		    <div>
+		    <fieldset class=" inline">
+		            <legend>
+		    <span>
+		        Do you currently earn at least £18,600 per year?
+		        <span class="visuallyhidden">(Required)</span>
+		    </span>
+		</legend>
+
+		        <div class="group selectable selectable-list" id="value_field">
+		            <div class="field-input">
+		            <label for="value_true">
+		        <input type="radio" id="value_true" name="value" value="true">
+		        <span class="block">Yes</span>
+
+		</label>
+
+
+		            </div>
+		            <div class="field-input">
+		            <label for="value_false">
+		        <input type="radio" id="value_false" name="value" value="false">
+		        <span class="block">No</span>
+
+		</label>
+
+
+		            </div>
+
+
+		</div>
+		    </fieldset>
+		</div>
+
+		</div>
+
+
+		            <a class="button button-continue" href="documents.html">Save and continue</a>
+
+
+
+
+
+
+		</form>
+
+
+		    </div>
+
+
+
+
+		<div class="save-for-later-link">
+		    <a data-track="save-for-later" href="/saveForLater"><span>Return to this application later</span>
+		</a>
+		</div>
+
+
+		        </section>
+
+
+
+     </section>
+
+
+
+
+
+
+	</main>
+	<footer data-includefile="footer"></footer>
+</body>
+</html>
